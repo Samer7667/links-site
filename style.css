@@ -1,0 +1,142 @@
+/* Reset بسيط للهوامش */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    text-align: center;
+    padding: 30px 15px;
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 420px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .container:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  .profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    object-fit: cover;
+    border: 3px solid #0073e6;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.05);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #0073e6;
+    font-weight: 700;
+  }
+  
+  p {
+    color: #666666;
+    font-size: 15px;
+    margin-bottom: 22px;
+    line-height: 1.6;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 10px;
+  }
+  
+  .links a {
+    display: block;
+    text-decoration: none;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 3px 8px rgba(0, 115, 230, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .links a:hover {
+    background-color: #005bb5;
+    box-shadow: 0 5px 15px rgba(0, 91, 181, 0.6);
+  }
+  
+  .note {
+    background-color: #ffe9c6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ffd180;
+    max-width: 420px;
+    margin: 0 auto 2rem;
+  }
+  
+  .project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem auto;
+    max-width: 420px;
+  }
+  
+  .project h2 {
+    margin: 0;
+    color: #d32f2f;
+  }
+  
+  .project p {
+    margin: 0.5rem 0;
+  }
+  
+  .project a {
+    color: #0288d1;
+    text-decoration: none;
+  }
+  
+  /* تجاوب مع الجوال */
+  @media (max-width: 480px) {
+    .container {
+      max-width: 95%;
+      padding: 20px;
+    }
+  
+    .profile-img {
+      width: 90px;
+      height: 90px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    p, .links a, .project a {
+      font-size: 14px;
+      padding: 10px 0;
+    }
+  
+    .note, .project {
+      max-width: 95%;
+    }
+  }
+  
